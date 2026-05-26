@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facial Expression Game</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="app">
+      <div id="video-wrap">
+        <video id="v" autoplay muted playsinline></video>
+        <canvas id="c"></canvas>
+      </div>
+
+      <div id="ui">
+        <div id="score">Score: <span id="score-val">0.00</span></div>
+        <div id="hint">Hint: <span id="hint-val">等待連線…</span></div>
+        <div id="status">Status: <span id="status-val">...</span></div>
+      </div>
+    </div>
+
+    <script type="module" src="camera.js"></script>
+    <script src="ui.js"></script>
+  </body>
+</html>

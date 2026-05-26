@@ -1,0 +1,18 @@
+* { box-sizing: border-box; }
+html,body,#app { height: 100%; margin: 0; }
+body { background: #0f1720; color: #e6eef6; font-family: Inter, Arial, sans-serif; }
+
+#video-wrap { position: relative; width: 100%; height: 70vh; overflow: hidden; background: #000; }
+#v { position: absolute; width: 100%; height: 100%; object-fit: cover; transform: scaleX(-1); }
+#c { position: absolute; width: 100%; height: 100%; pointer-events: none; }
+
+#ui { padding: 12px; display: flex; gap: 16px; align-items: center; justify-content: flex-start; }
+#score, #hint, #status { background: rgba(0,0,0,0.45); padding: 8px 12px; border-radius: 8px; }
+#score { font-size: 18px; font-weight: 600; }
+#hint { font-size: 16px; }
+#status { font-size: 14px; color: #9fd3c7 }
+
+@media (max-width: 600px) {
+  #video-wrap { height: 60vh; }
+  #score { font-size: 16px; }
+}
